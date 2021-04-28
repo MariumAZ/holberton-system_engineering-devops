@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#script that creates an RSA key pair.
+ssh-keygen -b 4096
+mv  ~/.ssh/id_rsa holberton
+ssh-keygen -p betty 
