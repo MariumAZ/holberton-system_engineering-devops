@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#A bash script for configuration
+
+sudo apt update
+sudo apt install nginx
+sudo ufw allow 'Nginx HTTP'
+echo "Holberton SChool" | sudo tee /var/www/html/index.html
+sudo service nginx restart
