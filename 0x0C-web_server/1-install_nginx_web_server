@@ -4,5 +4,7 @@
 sudo apt update
 sudo apt install nginx
 sudo ufw allow 'Nginx HTTP'
+sudo chown -R "$USER":"$USER" /var/www/html/index.html
+sudo chmod -R 755 /var/www 
 sudo service nginx start
 echo "Holberton School" | sudo tee /var/www/html/index.html
